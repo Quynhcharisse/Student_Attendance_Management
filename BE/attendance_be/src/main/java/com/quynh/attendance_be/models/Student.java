@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -27,4 +28,13 @@ public class Student {
     @ToString.Exclude
     @EqualsAndHashCode.Exclude
     List<Attendance> attendances;
+
+    public String getStatus() {
+      for (Attendance attendance : attendances) {
+          if (attendance.getDate().equals(LocalDateTime.now())) {
+              return attendance.getStatus();
+          }
+      }
+      return "absent";
+    }
 }

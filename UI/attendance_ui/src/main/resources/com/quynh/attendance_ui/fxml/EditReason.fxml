@@ -27,7 +27,6 @@
               <rowConstraints>
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
@@ -36,17 +35,12 @@
                         <Font name=".VnArial Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btn_edit" mnemonicParsing="false" onMouseClicked="#editReason" prefHeight="74.0" prefWidth="230.0" style="-fx-background-color: #0B241A;" text="EDIT REASON" textFill="WHITE" GridPane.rowIndex="2">
+                  <Button fx:id="btn_edit" mnemonicParsing="false" onMouseClicked="#editReason" prefHeight="74.0" prefWidth="230.0" style="-fx-background-color: #0B241A;" text="EDIT REASON" textFill="WHITE" GridPane.rowIndex="1">
                      <font>
                         <Font name=".VnArial Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btn_retake" mnemonicParsing="false" onMouseClicked="#retakeAttendance" prefHeight="74.0" prefWidth="230.0" style="-fx-background-color: #335343;" text="RETAKE ATTENDANCE " textFill="WHITE" GridPane.rowIndex="1">
-                     <font>
-                        <Font name=".VnArial Bold" size="14.0" />
-                     </font>
-                  </Button>
-                  <Button fx:id="btn_send" mnemonicParsing="false" onMouseClicked="#sendMail" prefHeight="82.0" prefWidth="230.0" style="-fx-background-color: #335343;" text="SEND MAIL" textFill="WHITE" GridPane.rowIndex="3">
+                  <Button fx:id="btn_send" mnemonicParsing="false" onMouseClicked="#sendMail" prefHeight="82.0" prefWidth="230.0" style="-fx-background-color: #335343;" text="SEND MAIL" textFill="WHITE" GridPane.rowIndex="2">
                      <font>
                         <Font name=".VnArial Bold" size="14.0" />
                      </font>
@@ -156,7 +150,7 @@
          </children>
       </GridPane>
       <TextField fx:id="txt_search" layoutX="324.0" layoutY="344.0" prefHeight="26.0" prefWidth="396.0" />
-      <ComboBox fx:id="combo_search" layoutX="741.0" layoutY="344.0" onMouseClicked="#comboBoxSearch" prefHeight="26.0" prefWidth="120.0" />
+      <ComboBox fx:id="combo_search" layoutX="741.0" layoutY="344.0" prefHeight="26.0" prefWidth="120.0" />
       <Button fx:id="btn_search" layoutX="877.0" layoutY="344.0" mnemonicParsing="false" onMouseClicked="#search" prefHeight="26.0" prefWidth="82.0" text="Search" />
       <Button fx:id="btn_save" layoutX="768.0" layoutY="268.0" mnemonicParsing="false" onMouseClicked="#save" prefHeight="42.0" prefWidth="192.0" text="Save" />
       <GridPane layoutX="767.0" layoutY="127.0" prefHeight="118.0" prefWidth="192.0">

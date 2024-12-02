@@ -17,8 +17,6 @@ public class EditReasonController {
     @FXML
     public Button btn_edit;
     @FXML
-    public Button btn_retake;
-    @FXML
     public Button btn_send;
 
     @FXML
@@ -66,11 +64,6 @@ public class EditReasonController {
     }
 
     @FXML
-    public void retakeAttendance(MouseEvent event) {
-        changePage("../fxml/RetakeAttendance.fxml", event);
-    }
-
-    @FXML
     public void sendMail(MouseEvent event) {
     }
 
@@ -91,10 +84,6 @@ public class EditReasonController {
         } catch(Exception e)  {
             e.printStackTrace();
         }
-    }
-
-    @FXML
-    public void comboBoxSearch(MouseEvent event) {
     }
 
     @FXML
